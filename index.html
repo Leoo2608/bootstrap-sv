@@ -3,132 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Tablas</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid d-flex">
-
-        <section class="col-md-8">
-            <div class="d-flex mt-4">
-                <label>Producto</label>
-                <select class="buscador form-control mx-3"> 
-                    <option>Buscar por código de barra o nombre del producto</option>
-                    <option>Producto1</option>
-                    <option>Producto2</option>
-                    <option>Producto3</option>
-                    <option>Producto4</option>
-                </select>
-                <button type="button" class="btn btn-primary">Agregar</button>
+    <div class="menu d-flex">
+        <nav id="sidebar">
+            <div class="sidebar-header d-flex justify-content-between">
+                <label class="sisfac">SISFAC</label>
+                <button class="sidebar-btn ">
+                    <svg class="bi bi-justify" width="22px" height="22px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
             </div>
-    
-            <table class="table table-hover mt-5 text-center">
-                <tr class="fila-principal">
-                    <th>ITEM</th>
-                    <th>CANT.</th>
-                    <th>PRODUCTO</th>
-                    <th>MARCA</th>
-                    <th>PRECIO</th>
-                    <th>IMPORTE</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <th>1</th>
-                    <th class="text-left">Leche Evaporada Entera Pack x 6 Un Lata 410 Gr</th>
-                    <th>Gloria</th>
-                    <th>15.30</th>
-                    <th>15.30</th>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <th>1</th>
-                    <th class="text-left">Leche chocolatada Tetra Pack 1 Lt</th>
-                    <th>Laive</th>
-                    <th>3.10</th>
-                    <th>3.10</th>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <th>1</th>
-                    <th class="text-left">Leche fresca 0% lactosa Tetra Pack 1 Lt</th>
-                    <th>Laive</th>
-                    <th>3.20</th>
-                    <th>3.20</th>
-                </tr>
-            </table>
-            <footer class="d-flex justify-content-center">
-                <button type="button" class="mx-3 mt-3 btn btn-primary">
-                    <svg class="bi bi-cart3" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                    </svg> Guardar Compra</button>
-                <button type="button" class="mx-3 mt-3 btn btn-danger"> <svg class="bi bi-trash-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                    </svg> VACIAR CARRITO</button>
-            </footer>
-        </section>
-       
-        <div class="col-md-4 mt-4">
-            <header class="pago">
-                <p class="text-white">S/. 21.60</p>
-            </header>
-            <article class="datos-pago">
-                <section class="d-flex justify-content-between px-3 pt-3">
-                    <div class="cajita">
-                        <label><b>DOCUMENTO</b></label>
-                        <select class="form-control">
-                            <option>FACTURA</option>
-                        </select>
-                    </div>
-                    <div class="cajita">
-                        <label><b>TIPO PAGO</b></label>
-                        <select class="form-control">
-                            <option>CONTADO</option>
-                        </select>
+
+            <ul class="list-unstyled components">
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#sub-mantenimiento" data-toggle="collapse" class="dropdown-toggle">Mantenimiento</a>
+                    <ul class="collapse list-unstyled" id="sub-mantenimiento">
+                        <li><a href="#">Opcion1</a></li>
+                        <li><a href="#">Opcion2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Reportes</a></li>
+                <li><a href="#">Backup</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+
+        </nav>
+        <div class="container-fluid">
+            <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-item"></i>
+                    <span>Toggle Sidebar</span>
+                    </button>
+                </div>
+            </nav>-->
+            <div class="fila1 row d-flex justify-content-between">
+                <section>
+                    <label>admin</label><svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                </section>
+                <label>Cerrar Sesion</label>
+            </div>
+
+            <article class="mt-4 ml-1 row d-flex">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-8"> 
+                    <label class="nc">Nueva Compra</label>
+                    <div class=" datos-compra col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-wrap">
+                        <article class="box-small">
+                            <label>Fecha</label>
+                            <input class="input-texto" type="date" required>
+                        </article>
+                        <article class="box-large">
+                            <label>Proveedor(es):</label>
+                            <input class="input-texto-grande" type="text">
+                        </article>
+                        <article class="box-small">
+                            <label>Código de Barra:</label>
+                            <input class="input-texto" type="text">
+                        </article>
+                        <article class="box-large">
+                            <label>Descripción:</label>
+                            <input class="input-texto-grande" type="text" required>
+                        </article>
+                        <article class="box-small">
+                            <label>Presentación:</label>
+                            <input class="input-texto" type="text" required>
+                        </article>
+                        <article class="box-small">
+                            <label>Precio:</label>
+                            <input class="input-texto" type="text" required>
+                        </article>
                     </div>
                 </section>
-                <section class="d-flex px-3 pt-3">
-                    <div class="pr-3">
-                        <label><b>SERIE</b></label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="pl-3">
-                        <label><b>N° DE VENTA</b></label>
-                        <input type="text" class="form-control">
-                    </div>
+                <section class="mt-3 col-sm-12 col-md-12 col-lg-6 col-xl-4 d-flex justify-content-center">
+                    <section class="tipo-doc">
+                        <div class="tipo-doc-sup">
+                            <label class="ml-3 mt-2 text-left">Tipo Documento</label>
+                        </div>
+                        <div class="mx-3 my-3">
+                            <select id="factura">
+                                <option>FACTURA</option>
+                            </select>
+                            <div class="d-flex justify-content-between">
+                                <input class="input-texto-doc" type="text">
+                                <input class="input-texto-doc" type="text">
+                            </div>
+                        </div>
+                    </section>
                 </section>
-               
-                <div class="px-3 pt-3">
-                    <label><b>Fecha de Compra</b></label>
-                    <input type="date" class="form-control">
-                </div>
-                <div class="px-3 pt-3">
-                    <label><b>PROVEEDOR</b></label>
-                    <input type="text" class="caja form-control" placeholder="RUC o Razón Social">
-                </div>
-                <div class="d-flex justify-content-between end-pago mx-3 px-3 pt-3">
-                    <aside>
-                        <label>SUB TOTAL</label><br>
-                    <label>I.G.V (18%)</label><br>
-                    <label>TOTAL</label>
-                    </aside>
-                    
-                    <aside>
-                        <label>S/. 18.30</label> <br>
-                        <label>S/. 3.29</label> <br>
-                        <label>S/. 21.60</label>
-                    </aside>
-                
-                </div>
             </article>
+
+            <section class="row col-sm-12 mx-2 mt-4 d-flex justify-content-center">
+                <button type="button" class="mx-2 btn btn-primary"><svg class="mr-2 bi bi-arrow-repeat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"/>
+                    <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"/>
+                    </svg>Nuevo</button>
+                <button type="button" class="mx-2 btn btn-success">
+                    <svg class="mr-2 bi bi-basket" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.243 1.071a.5.5 0 0 1 .686.172l3 5a.5.5 0 1 1-.858.514l-3-5a.5.5 0 0 1 .172-.686zm-4.486 0a.5.5 0 0 0-.686.172l-3 5a.5.5 0 1 0 .858.514l3-5a.5.5 0 0 0-.172-.686z"/>
+                        <path fill-rule="evenodd" d="M1 7v1h14V7H1zM.5 6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H.5z"/>
+                        <path fill-rule="evenodd" d="M14 9H2v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9zM2 8a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a1 1 0 0 0-1-1H2z"/>
+                        <path fill-rule="evenodd" d="M4 10a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                        </svg>Agregar</button>
+                <button type="button" class="mx-2 btn btn-dark">
+                    <svg class="mr-2 bi bi-check2-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h10a1.5 1.5 0 0 0 1.5-1.5V8a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 3v10z"/>
+                    </svg>Registrar</button>
+            </section>
+
+            <div class="mx-2 row .col-6 .col-md-4 m mt-5">
+				<table class="table table-bordered" id="tablita">
+					<thead class="tabla-head">
+						<tr>
+							<th scope="col">Item</th>
+							<th scope="col">Descripcion</th>
+							<th scope="col">Presentacion</th>
+							<th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Importe</th>
+							<th scope="col" colspan="2">Eliminar</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+            </div>
+            <section class="row mt-3 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-end">
+                <article class="caja-foot">
+                    <div class="my-2 d-flex justify-content-between">
+                        <label>SUBTOTAL</label>
+                        <input class="ml-4 text" disabled>   
+                    </div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <label>IGV:</label>
+                        <input class="ml-5 text" disabled> 
+                    </div>
+                    <div id="total" class="my-2 d-flex justify-content-between">
+                        <label>TOTAL:</label>
+                        <input class="ml-4 text" disabled> 
+                    </div>
+                </article>
+            </section>
+            
         </div>
     </div>
-    
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <!-- JS, Popper.js, and jQuery -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
