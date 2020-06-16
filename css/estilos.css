@@ -1,11 +1,24 @@
 .sidebar-btn{
-    background-color: #4b4f64;
+    position: relative;
+    left: 0;
+    margin-right: 20px;
+    background-color: rgb(241, 241, 241);
+    color: rgb(114, 106, 106);
+    width: 40px;
+    height: 38px;
+    border: 0.1px solid rgba(187, 187, 187, 0.28);
+    margin-top: 20px;
+}
+.sidebar-btn-2{
     color: white;
     width: 40px;
     height: 38px;
     border: 0.1px solid rgba(187, 187, 187, 0.28);
-    margin-top: 7px;
-    margin-right: 15px;
+    background-color : #4b4f64;
+    position: absolute;
+    left: 170px;
+    top: 25px;
+    transition: all .2s;
 }
 .sisfac{
     color: rgb(233, 233, 233);
@@ -39,6 +52,9 @@
     text-decoration: none;
 }
 #sidebar{
+    z-index: 2;
+    display: none;
+    position: fixed;
     min-width: 250px;
     max-width: 250px;
     color: #fff;
@@ -49,30 +65,33 @@
 .fila1{
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
 }
 /*NUEVA COMPRA*/
 .nc{
     font-size: 25px;
 }
 .input-texto{
-    width: 150px;
+    width: 210px;
     border: 1px solid  rgba(144, 144, 144, 0.596);
 }
 .input-texto-grande{
-    width: 300px;
+    width: 360px;
     border: 1px solid  rgba(144, 144, 144, 0.596);
 }
 .box-small{
-    width: 150px;
+    width: 210px;
     margin-right: 5px;
     margin-left: 5px;
 }
 .box-large{
-    width: 300px;
+    width: 360px;
     margin-right: 5px;
     margin-left: 5px;
 }
 .datos-compra{
+    display: flex;
+    flex-wrap: wrap;
     border-top: 1px solid  rgba(144, 144, 144, 0.596);
     padding: 5px;
     color: rgba(0, 0, 0, 0.705);
@@ -115,4 +134,10 @@
     border: 1px solid  rgba(144, 144, 144, 0.596);
     border-radius: 5px;
     padding: 5px;
+}
+.admin{
+    padding-top: 25px;
+}
+.cs{
+    padding-top: 25px;
 }
